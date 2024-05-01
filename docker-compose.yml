@@ -27,15 +27,16 @@ services:
     build: .
     tty: true
     command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      db:
+        condition: service_healthy
     ports:
       - '8000:8000'
 
     volumes:
-      - .:/app
+      - .:/code
 
-    depends_on:
-      db:
-        condition: service_healthy
+
 
 volumes:
   pg_data:
