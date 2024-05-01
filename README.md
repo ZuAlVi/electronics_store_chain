@@ -43,7 +43,6 @@ pip install -r requirements.txt
 5. Провести миграции:
 
 ```bash
-python3 manage.py makemigrations
 python3 manage.py migrate
 ```
 6. Запустить локальный сервер:
