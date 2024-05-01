@@ -40,8 +40,8 @@ urlpatterns = [
     # Applications
     path('admin/', admin.site.urls),
     path('users/', include('users.urls', namespace='users')),
-    # path('', include('products.urls', namespace='products')),
-    # path('', include('suppliers.urls', namespace='suppliers')),
+    path('', include('products.urls', namespace='products')),
+    path('', include('suppliers.urls', namespace='suppliers')),
 
     # JWT Authentication
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
