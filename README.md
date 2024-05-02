@@ -72,7 +72,7 @@ docker run -p 8000:8000 app-name
 - Собираем и запускаем контейнер в фоновом режиме одной командой:
 
 ```bash
-docker-compose up -d --build
+docker-compose up --build
  ```
 
 
