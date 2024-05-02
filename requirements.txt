@@ -16,7 +16,7 @@ inflection==0.5.1
 oauthlib==3.2.2
 packaging==24.0
 pillow==10.3.0
-psycopg2
+psycopg2-binary
 pycparser==2.22
 PyJWT==2.8.0
 python-dotenv==1.0.1

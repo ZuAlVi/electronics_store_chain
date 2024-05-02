@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 3. Создать файл `.env` в корне проекта и внести необходимые данные, взяв за пример файл `.env.example`.
 
-4. Создаем базу данных. 
+4. Создать базу данных. 
 
 5. Провести миграции:
 
@@ -63,7 +63,7 @@ docker build -t app-name .
 - Запускаем:
 
 ```bash
-docker run app-name .
+docker run -p 8000:8000 app-name
  ```
 
 2. Docker Compose:
